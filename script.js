@@ -1,6 +1,5 @@
 // שאלה 1
 function checkId(id) {
-    id = id + ""
 
     if(id.length === 9 && !isNaN(id)){
         console.log("Valid Id")
@@ -39,3 +38,18 @@ console.log(primeNumber(5))
 console.log(primeNumber(12))
 console.log(primeNumber(1))
 console.log(primeNumber(11))
+
+// שאלה 3
+
+function addSpace(text) {
+    let newText = ""
+
+    for(let index = 0; index < text.length; index++){
+        if(text[index] === text[index].toUpperCase()){
+            newText += " "
+        }
+        newText += text[index]
+    }
+    return newText
+}
+console.log(addSpace("abCdEf"))
