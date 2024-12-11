@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <table>
+            <tr>
+                <td colspan="5">
+                    <input type="text" id="display" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="1" onclick="addNum('1')">
+                </td>
+                <td>
+                    <input type="button" value="2" onclick="addNum('2')">
+                </td>
+                <td>
+                    <input type="button" value="3" onclick="addNum('3')">
+                </td>
+                <td>
+                    <input type="button"  id="plus" value="+" onclick="setOp('+')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="4" onclick="addNum('4')">
+                </td>
+                <td>
+                    <input type="button" value="5" onclick="addNum('5')">
+                </td>
+                <td>
+                    <input type="button" value="6" onclick="addNum('6')">
+                </td>
+                <td>
+                    <input type="button" id="minus" value="-" onclick="setOp('-')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="7" onclick="addNum('7')">
+                </td>
+                <td>
+                    <input type="button" value="8" onclick="addNum('8')">
+                </td>
+                <td>
+                    <input type="button" value="9" onclick="addNum('9')">
+                </td>
+                <td>
+                    <input type="button" id="multiplication" value="×" onclick="setOp('*')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="C" onclick="clr()">
+                </td>
+                <td>
+                    <input type="button" value="0" onclick="addNum('0')">
+                </td>
+                <td>
+                    <input type="button" id="equal" value="=" onclick="calc()" >
+                </td>
+                <td>
+                    <input type="button" id="division" value="÷" onclick="setOp('/')">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>

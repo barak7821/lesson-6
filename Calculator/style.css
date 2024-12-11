@@ -1,0 +1,86 @@
+/* Reset margins and padding */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles for the body */
+body{
+    display: flex;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0
+}
+
+#wrapper {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+input[type="button"] {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    background-color: #f7f7f7;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: #ddd;
+}
+
+input[type="button"]:active {
+    background-color: #ccc;
+}
+
+#display {
+    width: 100%;
+    padding: 15px;
+    font-size: 30px;
+    border: none;
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+    outline: none
+}
+
+#plus, #minus, #multiplication, #division {
+    background-color: #ffae00;
+    color: white;
+}
+
+#plus:hover, #minus:hover, #multiplication:hover, #division:hover {
+    background-color: #ffd988;
+}
+
+#equal{
+    background-color: #0087f5;
+    color: white;
+}
+
+#equal:hover{
+    background-color: #45abff;
+}
+
+td {
+    padding: 10px;
+}
+
+input[type="button"] {
+    margin: 5px;
+}
