@@ -1,7 +1,7 @@
 // שאלה 1
 function checkId(id) {
 
-    if(id.length === 9 && !isNaN(id)){
+    if (id.length === 9 && !isNaN(id)) {
         console.log("Valid Id")
         return true
     } else {
@@ -44,8 +44,8 @@ console.log(primeNumber(11))
 function addSpace(text) {
     let newText = ""
 
-    for(let index = 0; index < text.length; index++){
-        if(text[index] === text[index].toUpperCase()){
+    for (let index = 0; index < text.length; index++) {
+        if (text[index] === text[index].toUpperCase()) {
             newText += " "
         }
         newText += text[index]
@@ -53,3 +53,30 @@ function addSpace(text) {
     return newText
 }
 console.log(addSpace("abCdEf"))
+
+// שאלה 4
+
+function findStrings(string1, string2) {
+    let result = 0
+    const lenOf1 = string1.length
+    const lenOf2 = string2.length
+
+    if (lenOf1 <= lenOf2) {
+        let index = string2.indexOf(string1)
+        while (index !== -1) {
+            result++
+            index = string2.indexOf(string1, index + 1)
+        }
+    } else {
+        let index = string1.indexOf(string2)
+        while (index !== -1) {
+            result++
+            index = string1.indexOf(string2, index + 1)
+        }
+    }
+
+    console.log(result)
+
+}
+
+findStrings("TestTestTest", "Test")
